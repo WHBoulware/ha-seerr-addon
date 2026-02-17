@@ -5,6 +5,7 @@
   "description": "Seerr - Media request management",
   "arch": ["amd64", "aarch64"],
   "startup": "services",
+  "privileged": [],
   "boot": "auto",
   "init": true,
   "backup": "cold",
