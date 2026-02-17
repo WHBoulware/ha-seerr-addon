@@ -1,0 +1,30 @@
+{
+  "name": "Seerr",
+  "version": "1.0.0",
+  "slug": "seerr",
+  "description": "Seerr - Media request management (Overseerr successor)",
+  "arch": ["amd64", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "init": true,
+  "ingress": false,
+  "panel_icon": "mdi:movie-open",
+  "ports": {
+    "5055/tcp": 5055
+  },
+  "ports_description": {
+    "5055/tcp": "Seerr Web Interface"
+  },
+  "map": [
+    "config:rw"
+  ],
+  "options": {
+    "TZ": "America/New_York",
+    "LOG_LEVEL": "info"
+  },
+  "schema": {
+    "TZ": "str",
+    "LOG_LEVEL": "list(trace|debug|info|warn|error)"
+  },
+  "image": "ghcr.io/seerr-team/seerr:latest"
+}
