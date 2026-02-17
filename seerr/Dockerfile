@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/seerr-team/seerr:latest
+ARG BUILD_FROM
 FROM $BUILD_FROM
 
 ENV NODE_ENV=production
