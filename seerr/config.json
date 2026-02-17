@@ -6,9 +6,9 @@
   "arch": ["amd64", "aarch64"],
   "startup": "services",
   "boot": "auto",
-  "homeassistant_api": false,
   "init": true,
-  "ingress": false,
+  "backup": "data",
+  "ingress": true,
   "panel_icon": "mdi:movie-open",
   "ports": {
     "5055/tcp": 5055
@@ -16,9 +16,6 @@
   "ports_description": {
     "5055/tcp": "Seerr Web Interface"
   },
-  "map": [
-  "addon_config:rw"
-  ],
   "options": {
     "TZ": "America/New_York",
     "LOG_LEVEL": "info"
