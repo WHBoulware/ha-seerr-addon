@@ -6,6 +6,7 @@
   "arch": ["amd64", "aarch64"],
   "startup": "services",
   "boot": "auto",
+  "homeassistant_api": false,
   "init": true,
   "ingress": false,
   "panel_icon": "mdi:movie-open",
