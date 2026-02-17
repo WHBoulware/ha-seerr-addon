@@ -2,14 +2,13 @@
   "name": "Seerr",
   "version": "1.0.0",
   "slug": "seerr",
-  "description": "Seerr - Media request management (Overseerr successor)",
+  "description": "Seerr - Media request management",
   "arch": ["amd64", "aarch64"],
   "startup": "services",
   "boot": "auto",
   "init": true,
   "backup": "cold",
   "ingress": true,
-  "panel_icon": "mdi:movie-open",
   "ports": {
     "5055/tcp": 5055
   },
