@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 
-CONFIG_PATH="/app/config/seerr"
+CONFIG_PATH="/app/config"
 
 # Create config folder if not present
 if [ ! -d "$CONFIG_PATH" ]; then
@@ -10,7 +10,7 @@ fi
 # Ensure correct permissions (node user = 1000)
 chown -R 1000:1000 "$CONFIG_PATH"
 
-export CONFIG_DIRECTORY="/app/config/seerr"
+export CONFIG_DIRECTORY="/app/config"
 export TZ=$(bashio::config 'TZ')
 export LOG_LEVEL=$(bashio::config 'LOG_LEVEL')
 
