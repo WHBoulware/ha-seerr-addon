@@ -7,7 +7,7 @@
   "startup": "services",
   "boot": "auto",
   "init": true,
-  "backup": "data",
+  "backup": "cold",
   "ingress": true,
   "panel_icon": "mdi:movie-open",
   "ports": {
