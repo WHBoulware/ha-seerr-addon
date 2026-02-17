@@ -26,5 +26,4 @@
     "TZ": "str",
     "LOG_LEVEL": "list(trace|debug|info|warn|error)"
   },
-  "image": "ghcr.io/seerr-team/seerr:latest"
 }
