@@ -1,6 +1,10 @@
 #!/usr/bin/with-contenv bashio
 
-# Fix permissions for Seerr (runs as UID 1000)
+# Ensure persistent folder exists
+mkdir -p /data/logs
+
+# Fix ownership so node can write
 chown -R 1000:1000 /data
 
-exec node dist/index.js
+# Drop privileges back to node user
+exec su-exec node node dist/index.js
