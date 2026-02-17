@@ -16,7 +16,7 @@
     "5055/tcp": "Seerr Web Interface"
   },
   "map": [
-    "config:rw"
+  "addon_config:rw"
   ],
   "options": {
     "TZ": "America/New_York",
