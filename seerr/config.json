@@ -25,5 +25,5 @@
   "schema": {
     "TZ": "str",
     "LOG_LEVEL": "list(trace|debug|info|warn|error)"
-  },
+  }
 }
